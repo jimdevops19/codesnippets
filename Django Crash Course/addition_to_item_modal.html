@@ -1,0 +1,13 @@
+<form method="POST">
+    {% csrf_token %}
+    <h4 class="text-center">
+        {{ item.name }} costs {{ item.price }}$
+    </h4>
+    <br>
+    <h6 class="text-center">
+        By clicking Purchase, you will buy this item from the market
+    </h6>
+    <br>
+    <input type="hidden" name="purchased-item" value="{{ item.name }}">
+    <button type="submit" class="btn btn-outline-success btn-block">Purchase</button>
+</form>
