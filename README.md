@@ -1,5 +1,6 @@
 # codesnippets
 Code Snippets Repository for all my Content
+
 Social Media:
  - [Youtube](https://www.youtube.com/channel/UCU8d7rcShA7MGuDyYH1aWGg)
  - [Discord](https://discord.com/invite/aMgcPD9)
