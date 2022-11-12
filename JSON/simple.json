@@ -1,0 +1,11 @@
+{
+    "name" : "John Doe",
+    "age" : 34,
+    "friends" : [
+        {
+            "name" : "Paul C",
+            "age" : 33
+        }
+    ],
+    "other_key" : null
+}

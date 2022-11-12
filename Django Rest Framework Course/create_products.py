@@ -1,0 +1,5 @@
+Product.objects.create(name="MouseV1", original_price=35)
+Product.objects.create(name="Laptop", original_price=1450)
+Product.objects.create(name="Speaker", original_price=49.90)
+Product.objects.create(name="Microphone", original_price=89.90)
+Product.objects.create(name="TV", original_price=1800)
