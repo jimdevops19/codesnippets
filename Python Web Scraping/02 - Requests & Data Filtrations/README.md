@@ -1,1 +1,7 @@
-No Code Snippets for this video!
+### install bibliotheque python
+```bash
+pip install beautifulsoup4
+```
+```bash
+pip install lxml
+```
