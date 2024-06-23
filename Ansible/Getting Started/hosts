@@ -1,0 +1,11 @@
+[servers]
+jimserver02 ansible_host="172.233.52.103"
+jimserver03 ansible_host="172.233.52.112"
+
+[servers:vars]
+ansible_ssh_private_key_file=/root/.ssh/jsc-2024-linode
+
+
+[home]
+localhost01 ansible_connection=local
+localhost02 ansible_connection=local

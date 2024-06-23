@@ -1,0 +1,7 @@
+---
+- hosts: servers
+  tasks:
+    - name: Create file named after distribution
+      file:
+        path: "/tmp/{{ ansible_distribution }}.txt"
+        state: touch
