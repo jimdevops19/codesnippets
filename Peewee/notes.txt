@@ -1,0 +1,18 @@
+docker run -d \
+  --name my_postgres_container \
+  -e POSTGRES_DB=postgres \
+  -e POSTGRES_USER=postgres \
+  -e POSTGRES_PASSWORD=Password123 \
+  -p 5432:5432 \
+  -v my_postgres_volume:/var/lib/postgresql/data \
+  postgres
+
+docker run -d \
+  --name my_mysql_container \
+  -e MYSQL_DATABASE=mysql1 \
+  -e MYSQL_USER=mysql1 \
+  -e MYSQL_PASSWORD=Password123 \
+  -e MYSQL_ROOT_PASSWORD=Password123 \
+  -p 3306:3306 \
+  -v my_mysql_volume:/var/lib/mysql \
+  mysql
