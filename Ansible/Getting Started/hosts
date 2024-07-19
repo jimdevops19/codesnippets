@@ -1,6 +1,6 @@
 [servers]
-jimserver02 ansible_host="172.233.52.103"
-jimserver03 ansible_host="172.233.52.112"
+jimserver02 ansible_host="X.X.X.X"
+jimserver03 ansible_host="X.X.X.X"
 
 [servers:vars]
 ansible_ssh_private_key_file=/root/.ssh/<my-file>
