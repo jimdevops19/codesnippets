@@ -1,0 +1,24 @@
+- hosts: servers
+  vars:
+    desired_packages:
+      - nginx
+      - ssh
+      - curl
+
+  become: true
+  tasks:
+   - name: "Install Necessary Packages"
+     apt:
+       name: "{{ item }}"
+       state: present
+     with_items: "{{ desired_packages }}"
+     
+   - name: Template HTML file
+     template:
+       src: templates/index.html.j2
+       dest: /var/www/html/index.html
+       mode: 644
+   - name: Restart Nginx Service
+     service:
+       name: nginx
+       state: restarted
